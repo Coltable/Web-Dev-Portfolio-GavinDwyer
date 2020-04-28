@@ -1,0 +1,966 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-size: 15pt;
+    background: #051530;
+}
+
+
+
+/*-------------------------------- HEADER --------------------------------*/
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+.main-header {
+    margin: auto;
+    width: 100%;
+    min-height: 80px;
+    border-bottom: solid 5px #556F7A;
+    background: #DBC2CF;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+  .main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+    z-index: 2;
+  }
+
+/*-------------------------------- LOGO --------------------------------*/
+
+.logo {
+    width: 150px;
+    height: 60PX;
+    border: solid 3px #DEB992;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 40px;
+    float: left
+}
+
+/*-------------------------------- MAIN NAVBAR --------------------------------*/
+
+
+.main-nav,
+.drop-nav, .mainnavbar, .flyout-nav {
+    background: #2c3e50;
+    z-index: 2;
+}
+
+.mainnavbar:hover {
+    background-color: #556F7A;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 20px;
+    border: solid 3px #DEB992;
+    margin-right: 20px;
+    
+}
+
+  .main-nav > li {
+    float: left;
+    border-left: solid 2px #DEB992;
+}
+
+  .main-nav li:first-child {
+    border-left: none;
+}
+
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 35px;
+    text-decoration: none;
+}
+
+#navtitle {
+    display: inline;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    color: #556F7A;
+    margin-left: 1%;
+}
+
+/*-------------------------------- NAVBAR-DROPDOWN/FLYOUT --------------------------------*/
+
+.dropdown,
+.flyout {
+    position: relative;
+}
+
+.dropdown:after {
+    content: "\25BC";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+
+.drop-nav,
+.flyout-nav {
+    position: absolute;
+    display: none;
+}
+
+.drop-nav li {
+    border: 1px solid #DEB992;
+}
+
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+    display: block;
+}
+
+.flyout-nav {
+    left: 100%;
+    top: -1px;
+}
+
+.flyout:hover {
+    background: #556F7A;
+}
+
+.flyoutnav:hover {
+    background-color: #556F7A;
+}
+
+/*-------------------------------- HOME PAGE --------------------------------*/
+
+.homemain {
+    margin-top: 7%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+}
+
+#homeheader {
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.homeimg {
+    width: 60%;
+}
+
+.hometitle {
+    font-size: 60px;
+    text-decoration: none;
+    color: #DEB992;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.homepara {
+    font-size: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    color: white;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.homegrid {
+    display: grid;
+    position: relative;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.homegriditem {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: monospace;
+    border-top: 5px solid #DEB992;
+    border-bottom: 5px solid #DEB992;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.homegriditem p {
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0px 30px;
+}
+
+/*-------------------------------- APPS --------------------------------*/
+
+.appcontent {
+    text-align: center;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 300px 5px;
+    
+}
+
+.applogos {
+    width: 80%;
+    margin-top: 15px;
+}
+
+.applogoyt {
+    width: 80%;
+    margin-top: 15px;
+}
+
+.applogor {
+    width: 80%;
+}
+
+.applogod {
+    width: 80%;
+    margin-top: 5px;
+}
+
+.applogotw {
+    width: 80%;
+    margin-top: 25px;
+}
+
+.app {
+    border: 5px solid #556F7A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.appparas {
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    padding: 48px 10px;
+}
+
+.appparayt {
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    padding-top: 45px;
+    padding: 45px 20px;
+}
+
+.appparar {
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    padding: 30px 20px;
+}
+
+.appparad {
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    padding: 20px 20px;
+}
+
+.appparatw {
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    padding: 45px 20px;
+}
+
+/*-------------------------------- ABOUT ME --------------------------------*/
+
+.mainaboutme {
+    background: linear-gradient(0deg, rgba(164,108,125,1) 0%, rgba(135,233,237,1) 100%);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    margin-bottom: 1%;
+    border: 5px solid #556F7A;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.headerme {
+    margin-top: 10px;
+}
+
+#profile_img {
+    border: 8px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.mepage {
+    font-family: sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.aboutme {
+    font-family: monospace;
+    font-size: 30px;
+    margin: 2px;
+}
+
+.mainme {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.p1 {
+    font-size: 18px; 
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.p2 {
+    font-size: 18px; 
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+/*-------------------------------- SOCIAL MEDIAS CONTENT --------------------------------*/
+
+.maincontent {
+    color: white;
+    font-family: serif;
+    margin-top: 7.5%;
+    z-index: 1;
+    font-family: monospace;
+    text-align: center;
+}
+
+#ytlogo {
+    width: 30%;
+    margin-top: -10px;
+}
+
+#rlogo {
+    width: 30%;
+    margin-top: -30px;
+}
+
+#twlogo {
+    width: 30%;
+    margin-top: -10px;
+}
+
+#dlogo {
+    width: 30%;
+    margin-top: -10px;
+}
+
+#slogo {
+    width: 30%;
+}
+
+.gridtext {
+    color: #f2f2f2;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 220px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image1 {
+    width: 95%;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.image2 {
+    width: 95%;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.image3 {
+    width: 90%;
+    height: 120px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.image4 {
+    width: 90%;
+    height: 115px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.intro {
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+.education {
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+.warnings {
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+.extra {
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+/*-------------------------------- GALLERY --------------------------------*/
+
+.slideshow-container {
+    width: 880px;
+    position: relative;
+    height: 800px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.mySlides {
+  display: none;
+    text-align: center;
+    height: 700px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 6px;
+  color: #DBC2CF;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+    margin-left: 20px;
+}
+
+.prev {
+    margin-right: 20px;
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+#galleryimg {
+    width: 90%;
+    height: 550px;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 17px;
+  font-family: monospace;
+  width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 10px;
+}
+
+#dots {
+    text-align: center;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.signup {
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+/*-------------------------------- VIDEO --------------------------------*/
+
+.video {
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-bottom: 30px;
+}
+
+.videotitle {
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.videotext {
+    color: #f2f2f2;
+    font-size: 17px;
+    font-family: monospace;
+    margin-top: 10px;
+}
+
+/*-------------------------------- SITE MAP --------------------------------*/
+
+.sitemap {
+    margin-left: 20%;
+    margin-right: 20%;
+    list-style-type: none;
+    background:linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 5px solid #556F7A;
+    margin-top: 7%;
+    margin-bottom: 6.5%;
+    padding: 100px;
+}
+
+.sitemaplist {
+    padding: 50px;
+    line-height: 1.2;
+    border: 5px solid #556F7A;
+}
+
+.sitemaph {
+    color: #4A6266;
+    text-decoration: none;
+    font-size: 70px;
+}
+
+.fulllist {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#sitemaplink a {
+    color: white;
+    text-decoration: none;
+}
+
+#sitemaplink a:hover {
+    color: #4A6266;
+}
+
+.ul{
+    margin-left:50px;
+}
+
+.ul_two{
+    margin-left:30px;
+}
+
+.ul_three {
+    margin-left: 50px;
+}
+
+span {
+    font-size: 40px;
+    color: black;
+}
+
+/*-------------------------------- Resource --------------------------------*/
+
+#resources {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 7%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    color: white;
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    border: 5px solid #4A6266;
+}
+
+#resources th {
+    text-align: left;
+    background-color: #4A6266;
+}
+
+.tablea {
+    color: lightgray;
+}
+
+.tablea:hover {
+    color: #DBC2CF;
+}
+
+#resources tr:hover {
+    background-color: #4A6266;
+}
+
+.tablea {
+    color: lightgray;
+}
+
+
+/*-------------------------------- FOOTER --------------------------------*/
+
+footer {
+    bottom: 0;
+    position: relative;
+    background-color: #DBC2CF;
+    width: 100%;
+    line-height: 1.3;
+    height: auto;
+    display: table;
+    border-top: 5px solid #556F7A;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer a {
+    text-decoration: none;
+    
+}
+
+.footer-main {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DBC2CF;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+.footer-items {
+    background-color: #DBC2CF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ft-li {
+    background-color: #DBC2CF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ft-legal {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ft-li a, ft-legal-li a {
+    text-decoration: none;
+    color: black;
+}
+
+.ft-legal-li  {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    background-color: #DBC2CF;
+    color: black;
+}
+
+.ft-legal-li a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #556F7A;
+}
+
+h4 {
+    visibility: hidden;
+    font-size: 0px;
+}
+/*-------------------------------- FORM --------------------------------*/
+
+form, .results {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 120px;;
+    width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #DEB992;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: sans-serif; 
+    background: #556F7A;
+    background: linear-gradient(0deg, #556F7A 20%, #DBC2CF 100%);
+    font-weight: bold;
+    color: white;
+    box-shadow: 10px -10px teal;
+    z-index: 1;
+    
+}
+
+h1 {
+    color: #2d7d69;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+/*-------------------------------- FIELDSETS --------------------------------*/
+
+fieldset {
+    background-color: #3C7A89;
+    border: 1px solid #DEB992;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+.instructions {
+    font-style: italic;
+}
+
+.left {
+    float: left;
+    box-sizing: border-box;
+}
+
+.right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.center {
+    margin-left: 250px;
+}
+
+/*-------------------------------- DIVS --------------------------------*/
+
+.diva, .divb, .divc, .divd {
+    margin: 12px 0;
+}
+
+.diva input {
+    position: absolute;
+    left: 290px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin-bottom: 5px;
+}
+
+#age {
+    width: 200px;
+}
+
+.divb select {
+    position: absolute;
+    left: 820px;
+    background-color: lightgray;
+    margin-top: 3px
+}
+
+.divb input {
+    position: absolute;
+    left: 820px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin-bottom: 4px;
+}
+
+#radioleft, #radioright {
+    width: 50% ;
+    margin-top: 0px;
+}
+
+#radioleft input {
+    left: 550px;
+    margin-top: 6px;
+}
+
+#radioleft {
+    float: left;
+}
+
+#radioright input {
+    margin-top: 6px;
+}
+
+#radioright {
+    float: right;
+}
+
+.radios {
+    clear: both;
+}
+/*-------------------------------- TEXTAREA --------------------------------*/
+
+textarea {
+    border-radius: 5px;
+    padding: 5px;
+    height: 159px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+/*-------------------------------- BUTTONS --------------------------------*/
+
+button {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: #DEB992 1px solid;
+    color: white;
+    background-color: #2d7d69;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #051622;
+}
+
+.leftbutton, .rightbutton {
+    width: 50%;
+    float: left;
+}
+
+#submit {
+    float: right;
+}
+
+#reset {
+    float: left;
+}
+
+/*-------------------------------- RESULTS PAGE --------------------------------*/
+
+.results {
+    color: white;
+}
+
+.results p {
+    margin: 20px 0;
+}
+
+#userdata {
+    color: lightgrey;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.results a {
+    color: chocolate;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.resultp {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
